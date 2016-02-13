@@ -1,3 +1,37 @@
 .hl{
-  color: #EB138E; 
+  color: #EB138E;
+}
+
+#intro-l {
+  float: left;
+  /*height: 70%;
+  width: 70%;*/
+  /*height: 800px;
+  width: 400px;*/
+  /*padding-right: 100px;*/
+
+
+}
+
+#intro-r{
+  float: right;
+  height: 50%;
+  width: 50%;
+  font-size: 25px;
+  padding-top: 300px;
+  margin-left: -100px;
+}
+
+img {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#bgn-pic {
+  height: 750px;
+  width: 500px;
+
+  /*height: 70%;
+  width: 70%;*/
 }

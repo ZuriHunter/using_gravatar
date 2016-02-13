@@ -42,24 +42,31 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-background="black">
-					<h1><span class="hl">WWC:</span> Ruby on Rails</h1>
-					<hr>
-					<h2><span class="hl">Using Gravatar</span></h2>
-					<p>
-					<a href="http://www.twitter.com/ZuriHunter">Zuri Hunter</a>
-					</p>
+
+					<div id="intro-l">
+						<img id="bgn-pic" src="images/BGN.png">
+					</div>
+
+						<div id="intro-r">
+							<h2><span class="hl">WWC:</span> Ruby on Rails</h2>
+								<hr>
+							<h3><span class="hl">Using Gravatar</span></h3>
+								<p>
+									<a href="http://www.twitter.com/ZuriHunter">Zuri Hunter</a>
+								</p>
+						</div>
 				</section>
 
 				<!-- Table of Content -->
 				<section data-background="black">
 					<h2><span class="hl">Table of Contents</span></h2>
-					<ol>
-						<li>The What?</li>
-						<li>The Why?</li>
-						<li>Create myContacts</li>
-						<li>Connect with Gravatar</li>
-						<li>Resources</li>
-					</ol>
+					<ul>
+						<li>The <span class="hl">What</span>?</li>
+						<li>The <span class="hl">Why</span>?</li>
+						<li>Create <span class="hl">myContacts</span></li>
+						<li>Connect to <span class="hl">Gravatar</span></li>
+						<li><span class="hl">Resources</span></li>
+					</ul>
 				</section>
 
 				<!-- The What -->
@@ -69,7 +76,7 @@
 						<hr>
 					</section>
 					<section>
-						<p>Gravatar is a "globally recognized avatar API used to attach an avatar as representation of you online."</p>
+						<p><span class="hl">Gravatar</span> is a "globally recognized avatar API used to attach an avatar as representation of you online."</p>
 					</section>
 				</section>
 
@@ -81,12 +88,13 @@
 					</section>
 					<section>
 						<ul>
-							<li>Prevents inappropriate images on your website from users</li>
-							<li>Eliminates redundancy in uploading a user image on every social platform</li>
-							<li>Eliminates the need to code avatar image uploading in applications</li>
+							<li class="fragment">Prevents <span class="hl">inappropriate images</span> on your website from users</li>
+							<li class="fragment">Eliminates <span class="hl">redundancy</span> in uploading a user image on every social platform</li>
+							<li class="fragment">Eliminates the <span class="hl">need to code</span> avatar image uploading in applications</li>
+							<li class="fragment">Eliminates the need to <span class="hl">add cloud databases</span> such as Amazon Web Services (S3) to the application </li>
 						</ul>
 
-						<p><i>Only works with websites that uses the Gravatar plugin</i></p>
+						<p><i class="fragment">Only works with websites that uses the Gravatar plugin</i></p>
 					</section>
 				</section>
 
@@ -105,9 +113,9 @@
 
 					<section>
 						<ul>
-							<li><code>cd</code> - change directory </li>
-							<li><code>cd ..</code> - go back one level in directory </li>
-							<li><code> ls or dir </code> - lists all files in current directory </li>
+							<li><code class="hl">cd</code> - change directory </li>
+							<li><code class="hl">cd ..</code> - go back one level in directory </li>
+							<li><code class="hl"> ls or dir </code> - lists all files in current directory </li>
 						</ul>
 					</section>
 				</section>
@@ -196,7 +204,7 @@
 					</section>
 					<section>
 						<p class="fragment">Within your project go to app/helper/application_helper.rb</p>
-<pre class="fragment"><code class="hljs" style="max-height: none !important; max-width: none !important;" data-trim contenteditable>
+<pre class="fragment"><code class="hljs" data-trim contenteditable>
 def gravatar_url(user)
 	gravatar_id = Digest::MD5::hexdigest(user.email.downcase)
 	default_url = "http://www.francaisasydney.com/images/avatars/gallery/woman1.jpg"
